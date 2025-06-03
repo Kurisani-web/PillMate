@@ -2,7 +2,7 @@
   "expo": {
     "name": "PillMate",
     "slug": "pill-mate",
-    "version": "1.0.0",
+    "version": "1.2025.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "pill-mate",
@@ -15,7 +15,7 @@
       "package": "com.kurisani.pillmate",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#191970"
       }
     },
     "web": {
@@ -31,7 +31,7 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#191970"
         }
       ]
     ],
