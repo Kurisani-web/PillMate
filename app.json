@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "bycicle-rental-app",
-    "slug": "bycicle-rental-app",
+    "name": "PillMate",
+    "slug": "pill-mate",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "pill-mate",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
