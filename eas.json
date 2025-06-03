@@ -1,13 +1,13 @@
 {
   "cli": {
-    "appVersionSource": "local"
+    "version": ">= 3.0.0"
   },
   "build": {
     "production": {
+      "developmentClient": false,
       "distribution": "store",
       "android": {
-        "buildType": "app-bundle",
-        "versionSource": "local"
+        "buildType": "apk"
       }
     }
   }
