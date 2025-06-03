@@ -38,8 +38,8 @@ const QUICK_ACTIONS = [
     icon: "add-circle-outline" as const,
     label: "Add\nMedication",
     route: "/medications/add" as const,
-    color: "#2E7D32",
-    gradient: ["#191970", "#2E7D32"] as [string, string],
+    color: "#2F4F4F",
+    gradient: ["#191970", "#2F4F4F"] as [string, string],
   },
   {
     icon: "calendar-outline" as const,
@@ -506,7 +506,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   seeAllButton: {
-    color: "#2E7D32",
+    color: "#2F4F4F",
     fontWeight: "600",
   },
   doseCard: {
