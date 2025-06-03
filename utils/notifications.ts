@@ -53,15 +53,15 @@ export async function scheduleMedicationReminder(
   if (!medication.reminderEnabled) return;
 
   try {
-    // Schedule notifications for each time
     for (const time of medication.times) {
       const [hours, minutes] = time.split(":").map(Number);
-      const today = new Date();
-      today.setHours(hours, minutes, 0, 0);
 
-      // If time has passed for today, schedule for tomorrow
-      if (today < new Date()) {
-        today.setDate(today.getDate() + 1);
+      const triggerDate = new Date();
+      triggerDate.setHours(hours, minutes, 0, 0);
+
+      // If the time has already passed today, schedule for tomorrow
+      if (triggerDate <= new Date()) {
+        triggerDate.setDate(triggerDate.getDate() + 1);
       }
 
       const identifier = await Notifications.scheduleNotificationAsync({
@@ -70,11 +70,7 @@ export async function scheduleMedicationReminder(
           body: `Time to take ${medication.name} (${medication.dosage})`,
           data: { medicationId: medication.id },
         },
-        trigger: {
-          hour: hours,
-          minute: minutes,
-          repeats: true,
-        },
+        trigger: triggerDate, // precise scheduling
       });
 
       return identifier;
