@@ -44,8 +44,8 @@ export default function AuthScreen() {
       const auth = await LocalAuthentication.authenticateAsync({
         promptMessage:
           hasHardware && hasBiometrics
-            ? "Use Face ID or Touch ID"
-            : "Enter your PIN to access MedRemind",
+            ? "Use Face ID or Fingerprint"
+            : "Enter your PIN to access PillMate",
         fallbackLabel: "Use PIN",
         cancelLabel: "Cancel",
         disableDeviceFallback: false,
@@ -65,20 +65,20 @@ export default function AuthScreen() {
   };
 
   return (
-    <LinearGradient colors={["#4CAF50", "#2E7D32"]} style={styles.container}>
+    <LinearGradient colors={["#191970", "#2E7D32"]} style={styles.container}>
       <View style={styles.content}>
         <View style={styles.iconContainer}>
           <Ionicons name="medical" size={80} color="white" />
         </View>
 
-        <Text style={styles.title}>MedRemind</Text>
-        <Text style={styles.subtitle}>Your Personal Medication Assistant</Text>
+        <Text style={styles.title}>PillMate</Text>
+        <Text style={styles.subtitle}>Never Miss a Dose, Stay on Track</Text>
 
         <View style={styles.card}>
           <Text style={styles.welcomeText}>Welcome Back!</Text>
           <Text style={styles.instructionText}>
             {hasBiometrics
-              ? "Use Face ID/Touch ID or PIN to access your medications"
+              ? "Use Face ID/Fingerprint or PIN to access your medications"
               : "Enter your PIN to access your medications"}
           </Text>
 
@@ -176,7 +176,7 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   button: {
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#191970",
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 12,

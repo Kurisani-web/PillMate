@@ -42,7 +42,7 @@ export default function SplashScreen() {
         ]}
       >
         <Ionicons name="medical" size={100} color="white" />
-        <Text style={styles.appName}>MedRemind</Text>
+        <Text style={styles.appName}>PillMate</Text>
       </Animated.View>
     </View>
   );
@@ -51,7 +51,7 @@ export default function SplashScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#191970",
     alignItems: "center",
     justifyContent: "center",
   },
