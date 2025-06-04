@@ -339,7 +339,7 @@ const styles = StyleSheet.create({
   filterText: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#666",
+    color: "#fff",
   },
   filterTextActive: {
     color: "white",
@@ -355,7 +355,7 @@ const styles = StyleSheet.create({
   dateHeader: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#666",
+    color: "#fff",
     marginBottom: 12,
   },
   historyCard: {
