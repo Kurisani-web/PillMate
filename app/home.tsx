@@ -250,7 +250,7 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <LinearGradient colors={["#191970", "#146922"]} style={styles.header}>
+      <LinearGradient colors={["#191970", "#1e90ff"]} style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.headerTop}>
             <View style={styles.flex1}>
@@ -610,7 +610,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     borderWidth: 2,
-    borderColor: "#146922",
+    borderColor: "#1e90ff",
     paddingHorizontal: 4,
   },
   notificationCount: {
