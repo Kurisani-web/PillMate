@@ -159,7 +159,7 @@ export default function CalendarScreen() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={["#1a8e2d", "#146922"]}
+        colors={["#191970", "#146922"]}
         style={styles.headerGradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
@@ -171,7 +171,7 @@ export default function CalendarScreen() {
             onPress={() => router.back()}
             style={styles.backButton}
           >
-            <Ionicons name="chevron-back" size={28} color="#1a8e2d" />
+            <Ionicons name="chevron-back" size={28} color="#191970" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Calendar</Text>
         </View>
@@ -330,10 +330,10 @@ const styles = StyleSheet.create({
     color: "#333",
   },
   today: {
-    backgroundColor: "#1a8e2d15",
+    backgroundColor: "#19197015",
   },
   todayText: {
-    color: "#1a8e2d",
+    color: "#191970",
     fontWeight: "600",
   },
   hasEvents: {
@@ -343,7 +343,7 @@ const styles = StyleSheet.create({
     width: 4,
     height: 4,
     borderRadius: 2,
-    backgroundColor: "#1a8e2d",
+    backgroundColor: "#191970",
     position: "absolute",
     bottom: "15%",
   },
@@ -417,7 +417,7 @@ const styles = StyleSheet.create({
   takenBadge: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#E8F5E9",
+    backgroundColor: "#add8e6",
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 12,

@@ -280,7 +280,7 @@ export default function AddMedicationScreen() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={["#1a8e2d", "#146922"]}
+        colors={["#191970", "#146922"]}
         style={styles.headerGradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
@@ -292,7 +292,7 @@ export default function AddMedicationScreen() {
             onPress={() => router.back()}
             style={styles.backButton}
           >
-            <Ionicons name="chevron-back" size={28} color="#1a8e2d" />
+            <Ionicons name="chevron-back" size={28} color="#191970" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>New Medication</Text>
         </View>
@@ -359,7 +359,7 @@ export default function AddMedicationScreen() {
               onPress={() => setShowDatePicker(true)}
             >
               <View style={styles.dateIconContainer}>
-                <Ionicons name="calendar" size={20} color="#1a8e2d" />
+                <Ionicons name="calendar" size={20} color="#191970" />
               </View>
               <Text style={styles.dateButtonText}>
                 Starts {form.startDate.toLocaleDateString()}
@@ -390,7 +390,7 @@ export default function AddMedicationScreen() {
                     }}
                   >
                     <View style={styles.timeIconContainer}>
-                      <Ionicons name="time-outline" size={20} color="#1a8e2d" />
+                      <Ionicons name="time-outline" size={20} color="#191970" />
                     </View>
                     <Text style={styles.timeButtonText}>{time}</Text>
                     <Ionicons name="chevron-forward" size={20} color="#666" />
@@ -432,7 +432,7 @@ export default function AddMedicationScreen() {
               <View style={styles.switchRow}>
                 <View style={styles.switchLabelContainer}>
                   <View style={styles.iconContainer}>
-                    <Ionicons name="notifications" size={20} color="#1a8e2d" />
+                    <Ionicons name="notifications" size={20} color="#191970" />
                   </View>
                   <View>
                     <Text style={styles.switchLabel}>Reminders</Text>
@@ -446,7 +446,7 @@ export default function AddMedicationScreen() {
                   onValueChange={(value) =>
                     setForm({ ...form, reminderEnabled: value })
                   }
-                  trackColor={{ false: "#ddd", true: "#1a8e2d" }}
+                  trackColor={{ false: "#ddd", true: "#191970" }}
                   thumbColor="white"
                 />
               </View>
@@ -459,7 +459,7 @@ export default function AddMedicationScreen() {
               <View style={styles.switchRow}>
                 <View style={styles.switchLabelContainer}>
                   <View style={styles.iconContainer}>
-                    <Ionicons name="reload" size={20} color="#1a8e2d" />
+                    <Ionicons name="reload" size={20} color="#191970" />
                   </View>
                   <View>
                     <Text style={styles.switchLabel}>Refill Tracking</Text>
@@ -480,7 +480,7 @@ export default function AddMedicationScreen() {
                       });
                     }
                   }}
-                  trackColor={{ false: "#ddd", true: "#1a8e2d" }}
+                  trackColor={{ false: "#ddd", true: "#191970" }}
                   thumbColor="white"
                 />
               </View>
@@ -564,7 +564,7 @@ export default function AddMedicationScreen() {
             disabled={isSubmitting}
           >
             <LinearGradient
-              colors={["#1a8e2d", "#146922"]}
+              colors={["#191970", "#146922"]}
               style={styles.saveButtonGradient}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
@@ -671,8 +671,8 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   selectedOptionCard: {
-    backgroundColor: "#1a8e2d",
-    borderColor: "#1a8e2d",
+    backgroundColor: "#191970",
+    borderColor: "#191970",
   },
   optionIcon: {
     width: 50,
@@ -698,7 +698,7 @@ const styles = StyleSheet.create({
   durationNumber: {
     fontSize: 24,
     fontWeight: "700",
-    color: "#1a8e2d",
+    color: "#191970",
     marginBottom: 5,
   },
   selectedDurationNumber: {

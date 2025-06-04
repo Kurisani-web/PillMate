@@ -250,7 +250,7 @@ export default function HomeScreen() {
 
   return (
     <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
-      <LinearGradient colors={["#1a8e2d", "#146922"]} style={styles.header}>
+      <LinearGradient colors={["#191970", "#146922"]} style={styles.header}>
         <View style={styles.headerContent}>
           <View style={styles.headerTop}>
             <View style={styles.flex1}>
@@ -660,7 +660,7 @@ const styles = StyleSheet.create({
     width: 40,
     height: 40,
     borderRadius: 20,
-    backgroundColor: "#E8F5E9",
+    backgroundColor: "#add8e6",
     justifyContent: "center",
     alignItems: "center",
     marginRight: 15,
@@ -697,7 +697,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   addMedicationButton: {
-    backgroundColor: "#1a8e2d",
+    backgroundColor: "#191970",
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 20,
@@ -709,7 +709,7 @@ const styles = StyleSheet.create({
   takenBadge: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#E8F5E9",
+    backgroundColor: "#add8e6",
     paddingHorizontal: 12,
     paddingVertical: 6,
     borderRadius: 12,

@@ -78,7 +78,7 @@ export default function RefillTrackerScreen() {
       return {
         status: "Good",
         color: "#191970",
-        backgroundColor: "#E8F5E9",
+        backgroundColor: "#add8e6",
       };
     }
   };
@@ -86,7 +86,7 @@ export default function RefillTrackerScreen() {
   return (
     <View style={styles.container}>
       <LinearGradient
-        colors={["#1a8e2d", "#146922"]}
+        colors={["#191970", "#146922"]}
         style={styles.headerGradient}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
@@ -98,7 +98,7 @@ export default function RefillTrackerScreen() {
             onPress={() => router.back()}
             style={styles.backButton}
           >
-            <Ionicons name="chevron-back" size={28} color="#1a8e2d" />
+            <Ionicons name="chevron-back" size={28} color="#191970" />
           </TouchableOpacity>
           <Text style={styles.headerTitle}>Refill Tracker</Text>
         </View>
@@ -384,7 +384,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   addButton: {
-    backgroundColor: "#1a8e2d",
+    backgroundColor: "#191970",
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 20,
