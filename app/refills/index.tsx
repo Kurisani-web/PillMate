@@ -109,7 +109,7 @@ export default function RefillTrackerScreen() {
         >
           {medications.length === 0 ? (
             <View style={styles.emptyState}>
-              <Ionicons name="medical-outline" size={48} color="#ccc" />
+              <Ionicons name="medkit-outline" size={48} color="#ccc" />
               <Text style={styles.emptyStateText}>No medications to track</Text>
               <TouchableOpacity
                 style={styles.addButton}
@@ -222,7 +222,7 @@ export default function RefillTrackerScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: "#1F2937",
   },
   headerGradient: {
     position: "absolute",

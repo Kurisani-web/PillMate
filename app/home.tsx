@@ -38,8 +38,8 @@ const QUICK_ACTIONS = [
     icon: "add-circle-outline" as const,
     label: "Add\nMedication",
     route: "/medications/add" as const,
-    color: "#2F4F4F",
-    gradient: ["#191970", "#2F4F4F"] as [string, string],
+    color: "#4169e1",
+    gradient: ["#191970", "#4169e1"] as [string, string],
   },
   {
     icon: "calendar-outline" as const,
@@ -56,7 +56,7 @@ const QUICK_ACTIONS = [
     gradient: ["#E91E63", "#C2185B"] as [string, string],
   },
   {
-    icon: "medical-outline" as const,
+    icon: "medkit-outline" as const,
     label: "Refill\nTracker",
     route: "/refills" as const,
     color: "#E64A19",
@@ -313,7 +313,7 @@ export default function HomeScreen() {
           </View>
           {todaysMedications.length === 0 ? (
             <View style={styles.emptyState}>
-              <Ionicons name="medical-outline" size={48} color="#ccc" />
+              <Ionicons name="medkit-outline" size={48} color="#ccc" />
               <Text style={styles.emptyStateText}>
                 No medications scheduled for today
               </Text>
@@ -337,7 +337,7 @@ export default function HomeScreen() {
                     ]}
                   >
                     <Ionicons
-                      name="medical"
+                      name="medkit"
                       size={24}
                       color={medication.color}
                     />
@@ -399,7 +399,7 @@ export default function HomeScreen() {
             {todaysMedications.map((medication) => (
               <View key={medication.id} style={styles.notificationItem}>
                 <View style={styles.notificationIcon}>
-                  <Ionicons name="medical" size={24} color={medication.color} />
+                  <Ionicons name="medkit" size={24} color={medication.color} />
                 </View>
                 <View style={styles.notificationContent}>
                   <Text style={styles.notificationTitle}>
@@ -424,7 +424,7 @@ export default function HomeScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: "#1F2937",
   },
   header: {
     paddingTop: 50,
@@ -506,7 +506,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
   seeAllButton: {
-    color: "#2F4F4F",
+    color: "#4169e1",
     fontWeight: "600",
   },
   doseCard: {

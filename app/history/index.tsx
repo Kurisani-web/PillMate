@@ -275,7 +275,7 @@ export default function HistoryScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: "#1F2937",
   },
   headerGradient: {
     position: "absolute",
@@ -317,7 +317,7 @@ const styles = StyleSheet.create({
   filtersContainer: {
     paddingHorizontal: 20,
     marginBottom: 20,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: "#1F2937",
     paddingTop: 10,
   },
   filtersScroll: {
@@ -347,7 +347,7 @@ const styles = StyleSheet.create({
   historyContainer: {
     flex: 1,
     paddingHorizontal: 20,
-    backgroundColor: "#f8f9fa",
+    backgroundColor: "#1F2937",
   },
   dateGroup: {
     marginBottom: 25,

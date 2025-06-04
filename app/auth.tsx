@@ -65,10 +65,10 @@ export default function AuthScreen() {
   };
 
   return (
-    <LinearGradient colors={["#191970", "#2F4F4F"]} style={styles.container}>
+    <LinearGradient colors={["#191970", "#4169e1"]} style={styles.container}>
       <View style={styles.content}>
         <View style={styles.iconContainer}>
-          <Ionicons name="medical" size={80} color="white" />
+          <Ionicons name="medkit" size={80} color="white" />
         </View>
 
         <Text style={styles.title}>PillMate</Text>
