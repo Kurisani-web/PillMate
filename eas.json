@@ -7,7 +7,7 @@
       "developmentClient": false,
       "distribution": "store",
       "android": {
-        "buildType": "apk"
+        "buildType": "app-bundle"
       }
     }
   }

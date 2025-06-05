@@ -339,7 +339,7 @@ const styles = StyleSheet.create({
   filterText: {
     fontSize: 14,
     fontWeight: "600",
-    color: "#fff",
+    color: "#000",
   },
   filterTextActive: {
     color: "white",
